@@ -1,0 +1,15 @@
+service:
+  name: n8n
+
+image: n8nio/n8n
+version: 0.150.0-debian
+port: 5678
+replicas: 1
+
+postgresql:
+  enabled: true
+  database: postgres
+  host: postgres
+  password: qwerty
+  port: "5432"
+  user: postgres
